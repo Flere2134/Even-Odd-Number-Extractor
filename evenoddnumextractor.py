@@ -7,5 +7,10 @@ numbers = [int(i) for i in content.split()]
 even_numbers = []
 odd_numbers = []
 #checks each number and sorts them into the list
+for num in numbers:
+    if num % 2 == 0:
+        even_numbers.append(num)
+    else:
+        odd_numbers.append(num)
 #open even txt file and writes the even numbers
 #open even txt file and writes the odd numbers
