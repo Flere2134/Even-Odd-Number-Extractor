@@ -13,4 +13,10 @@ for num in numbers:
     else:
         odd_numbers.append(num)
 #open even txt file and writes the even numbers
+with open("even.txt", "w") as my_file:
+    for num in even_numbers:
+        my_file.write(str(num) + "\n")
 #open even txt file and writes the odd numbers
+with open("odd.txt", "w") as my_file:
+    for num in odd_numbers:
+        my_file.write(str(num) + "\n")
